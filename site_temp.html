@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site temporay</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/site_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-lg visible-md">
+						<img src="suites-sm.jpg" width="150px" height="150px">
+					</a>
+					<div class="navbar-brand">
+						<a href="index.html">
+							<h1>The Maharaja</h1>
+						</a>
+						<p>
+							<img src="images/star-k-logo.png" alt="Sankhe group"> 
+							<span>BY Sankhe group</span>
+						</p>
+					</div>
+					<br><br><br><br>               <!-- This is unexpected check later -->
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">			    <!-- in place of navbar-right pull- right can b used-->
+						<li>
+							<a href="#">
+							<span class="glyphicon glyphicon-map-marker"></span><br class="hidden-xs">Reservation
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About us
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-plus"></span><br class="hidden-xs">Sign In
+							</a>
+						</li>
+						<li id="phone" class="hidden-xs">
+              				<a href="tel:+91 8806189227">
+                				<span class="glyphicon glyphicon-phone">8806189227</span></a><div class="pull-right">* We Deliver</div>
+            			</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="main-content" class="container">
+		<div class="jumbotron"></div>
+		<div id="home-tiles" class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="menu.html">
+				<div id="menu-tile"><span>Menu</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="menu.html">
+				<div id="menu-tile"><span>Menu</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<a href="https://www.google.com/maps/place/St.+Rocks+college/@19.2380823,72.8458368,21z/data=!4m12!1m6!3m5!1s0x3be7b1d95f51bd71:0x6a1dbd529592bc15!2sSt.+Rocks+college!8m2!3d19.2380436!4d72.8456111!3m4!1s0x3be7b1d95f51bd71:0x6a1dbd529592bc15!8m2!3d19.2380436!4d72.8456111" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.43857471984728!2d72.84583678193958!3d19.238082347012178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1d95f51bd71%3A0x6a1dbd529592bc15!2sSt.%20Rocks%20college!5e0!3m2!1sen!2sin!4v1592159566538!5m2!1sen!2sin" width="100%" height="246" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <span>map</span>
+        	</div></a>
+        	</div>
+			
+		</div>
+	</div> <!-- <END OF #main-content -->
+	<footer class="panel-footer">
+		<div class="container-fluid">
+			<section  id="Hours" class="col-sm-4 col-xs-12">
+				<span>Hours</span><br>
+				<p>kadhi pan ya</p><br>
+				<hr class="visible-xs">
+			</section>
+			<section  id="Hours" class="col-sm-4 col-xs-12">
+				<span>Hours</span><br>
+				<p>kadhi pan ya</p><br>
+				<hr class="visible-xs">
+			</section>
+			<section  id="Hours" class="col-sm-4 col-xs-12">
+				<span>Hours</span><br>
+				<p>kadhi pan ya</p><br>
+				<hr class="visible-xs">
+			</section>
+		</div>
+
+	</footer>
+   	<script src="js/jquery-2.1.4.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
+</body>
+</html>
+
+
+<!-- Sizing of the header box is kept to height 150px for px<767 in media query ...check bistro code for their soln.
+	4 <br> tags are used to pull down the toggle button. otherwise it is apperinbg on the top of the header.
+	img src is used in place of background imaging in place of the logo
+	The toggle button is not visible in inspect section of the chrome while resizing it to px<767 but visible in normal chrome window---solved by changing the viewport settings...<meta='viewport'.....>
+	The toggle button...when expanded background color appears to be that of body....the color was fixed by defing the same color marron that of the nav-header in site_styles.css under #nav-list a
+	it is further creating problem while squeezing the screen
+	the collasped toggle button when expanded covers the jumbotron rather than sliding the jumbotron downwards.
+	the collasped version styling is to be improved by the learning the em font-sizing
+	I have not used .img-resposive and .visible-xs classes in the jumbotron rather used div background-image to display for >1200px
+	The text inside the tiles is exceeding the boxes in xs view.
+	HEADER IS A MESSSSSSS!!!!!!!!!!
+	after embeding image to the map tile....a little part at the bottom is overflowed i.e out of the box
+	-->
+	
