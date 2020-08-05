@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Convex Unit Convertor Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@50&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<img src="logoimg2.jpeg" id="logoimg">Convex Unit Convertor
+	</header>
+	<h3>Designed For Enginner's Ease</h3>
+	<div class="mainbox">
+		<label>Select The Mechanical Property</label>
+		<p class="boxinside">
+			<select class="dropdwn" id="mp">
+				<option id="">Stress</option>
+				<option id="">AWV</option>
+				<option id="">IZC</option>
+				<option id="">Pressure</option>
+			</select>
+		</p>
+		<form id="propunits">
+			<label>Convert</label>
+				<p class="boxinside">
+					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
+					<select class="dropdwn units">
+						<option id>Unit1</option>
+						<option id="u11">Pa</option>
+						<option id="u12">Mpa</option>
+						<option id="u13">Gpa</option>
+					</select>
+				</p>
+					<label>To</label><br>
+					<p class="boxinside">
+					<input type="number" id="target_box">
+					<select class="dropdwn units">
+						<option>Unit2</option>
+						<option id="u21">Pa</option>
+						<option id="u22">Mpa</option>
+						<option id="u23">Gpa</option>
+					</select>
+					</p>
+					<br>
+					<p class="boxinside">
+					<input type="reset" value="Reset Fields">
+					</p>
+		</form>
+	</div>
+	<hr id="horizontal_line">
+	<div class="info_box">
+				<p class="boxinside">
+					<p id="info_title">About The Project</p>
+					Hello! Our website is for the unit conversion of various Mechanical Properties.
+					We, Group 113 have used multiple elements to bring this webpage live to our users.
+					We have used HTML, Javascript and CSS, which make this webpage interactive, modern and user-friendly. We have also provided  hyperlinks to the Formula page which users can refer to, if they want to look for some specific formula
+				<br><br><a href="conversions_list.pdf" class="info_page" target="_blank">Conversion List</a><br>
+				<a href="infoprop.pdf" class="info_page" target="_blank">Mechanical Property</a>
+				</p>
+	</div>
+	<div class="vl"></div>
+	<footer>
+		<div id="footer_things">
+			&copy; All Rights Reserved<br>
+			Group Project No. 113
+			<p id="site"><a href="report.pdf" id="site_ref" target="_blank">Go to Report</a></p>
+		</div>
+	</footer>
+</body>
+</html>
