@@ -18,39 +18,16 @@
 	<div class="mainbox">
 		<label>Select The Mechanical Property</label>
 		<p class="boxinside">
-			<select class="dropdwn" id="mp">
-				<option id="">Stress</option>
-				<option id="">AWV</option>
-				<option id="">IZC</option>
-				<option id="">Pressure</option>
+			<select class="dropdwn" id="mp" onchange="mechprop()" onselect="mechprop()">
+				<option selected="selected">Choose the property</option>
+				<option id="q1">Stress</option>
+				<option id="q2">Angular velocity</option>
+				<option id="q3">Viscosity</option>
+				<option id="q4">Pressure</option>
+				<option id="q5">Izod And Charpy</option>
 			</select>
 		</p>
-		<form id="propunits">
-			<label>Convert</label>
-				<p class="boxinside">
-					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
-					<select class="dropdwn units">
-						<option id>Unit1</option>
-						<option id="u11">Pa</option>
-						<option id="u12">Mpa</option>
-						<option id="u13">Gpa</option>
-					</select>
-				</p>
-					<label>To</label><br>
-					<p class="boxinside">
-					<input type="number" id="target_box">
-					<select class="dropdwn units">
-						<option>Unit2</option>
-						<option id="u21">Pa</option>
-						<option id="u22">Mpa</option>
-						<option id="u23">Gpa</option>
-					</select>
-					</p>
-					<br>
-					<p class="boxinside">
-					<input type="reset" value="Reset Fields">
-					</p>
-		</form>
+		<form id="propunits"></form>
 	</div>
 	<hr id="horizontal_line">
 	<div class="info_box">
