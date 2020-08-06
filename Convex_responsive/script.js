@@ -3,135 +3,142 @@ function mechprop() {
 
 
 		document.getElementById('propunits').innerHTML =
-		`<p class="inputs"><label>Convert</label>
-				<div class="make_center">
+		`<label>Convert</label>
+				<p class="boxinside">
 					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option id>Unit1</option>
 						<option id="u11">Pa</option>
 						<option id="u12">Mpa</option>
 						<option id="u13">Gpa</option>
 					</select>
-				</div></p>
-				<p class="inputs"><label>To</label><br>
-				<div class="make_center">
+				</p>
+					<label>To</label><br>
+					<p class="boxinside">
 					<input type="number" id="target_box">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option>Unit2</option>
 						<option id="u21">Pa</option>
 						<option id="u22">Mpa</option>
 						<option id="u23">Gpa</option>
 					</select>
+					</p>
 					<br>
+					<p class="boxinside">
 					<input type="reset" value="Reset Fields">
-				</div>`;
+					</p>`;
 		
 
 	}
 	else if (document.getElementById('q2').selected) {
 		document.getElementById('propunits').innerHTML =
-		`<p class="inputs"><label>Convert</label><br>
-				<div class="make_center">
+		`<label>Convert</label>
+				<p class="boxinside">
 					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option id>Unit1</option>
 						<option id="u11">RPM</option>
 						<option id="u12">rad/s</option>
 						<option id="u13">rad/hr</option>
 					</select>
-				</div></p>
-				<p class="inputs"><label>To</label><br>
-				<div class="make_center">
+				</p>
+					<label>To</label><br>
+					<p class="boxinside">
 					<input type="number" id="target_box">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option>Unit2</option>
 						<option id="u21">RPM</option>
 						<option id="u22">rad/s</option>
 						<option id="u23">rad/hr</option>
 					</select>
+					</p>
 					<br>
+					<p class="boxinside">
 					<input type="reset" value="Reset Fields">
-				</div></p>`;
+					</p>`;
 				
 	}
 	else if (document.getElementById('q3').selected) {
 		document.getElementById('propunits').innerHTML =
-		`<p class="inputs"><label>Convert</label><br>
-				<div class="make_center">
+		`<label>Convert</label>
+				<p class="boxinside">
 					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option id>Unit1</option>
-						<option id="u11">Ns/m<sup>2</sup></option>
+						<option id="u11">Ns/m2</option>
 						<option id="u12">Poise</option>
 						<option id="u13">kgf-sec/m2</option>
 					</select>
-				</div></p>
-				<p class="inputs"><label>To</label><br>
-				<div class="make_center">
+				</p>
+					<label>To</label><br>
+					<p class="boxinside">
 					<input type="number" id="target_box">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option>Unit2</option>
-						<option id="u21">Ns/m<sup>2</sup></option>
+						<option id="u21">Ns/m2</option>
 						<option id="u22">Poise</option>
 						<option id="u23">kgf-sec/m2</option>
 					</select>
+					</p>
 					<br>
+					<p class="boxinside">
 					<input type="reset" value="Reset Fields">
-				</div>`;
+					</p>`;
 				
 	}
 	else if (document.getElementById('q4').selected) {
 		document.getElementById('propunits').innerHTML =
-		`<p class="inputs"><label>Convert</label><br>
-				<div class="make_center">
+		`<label>Convert</label>
+				<p class="boxinside">
 					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option id>Unit1</option>
 						<option id="u11">atm</option>
 						<option id="u12">bar</option>
 						<option id="u13">mmHg</option>
 					</select>
-				</div></p>
-				<p class="inputs"><label>To</label><br>
-				<div class="make_center">
+				</p>
+					<label>To</label><br>
+					<p class="boxinside">
 					<input type="number" id="target_box">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option>Unit2</option>
 						<option id="u21">atm</option>
 						<option id="u22">bar</option>
 						<option id="u23">mmHg</option>
 					</select>
+					</p>
 					<br>
+					<p class="boxinside">
 					<input type="reset" value="Reset Fields">
-				</div>`;
+					</p>`;
 				
 	}
 	else if (document.getElementById('q5').selected) {
 		document.getElementById('propunits').innerHTML =
-		`<p class="inputs"><label>Convert</label><br>
-				<div class="make_center">
+		`<label>Convert</label>
+				<p class="boxinside">
 					<input type="number"  onchange="formula_dist(this.value)" oninput="formula_dist(this.value)">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option id>Unit1</option>
 						<option id="u11">Izod</option>
 						<option id="u12">Charpy</option>
 					</select>
-				</div></p>
-				<p class="inputs"><label>To</label><br>
-				<div class="make_center">
+				</p>
+					<label>To</label><br>
+					<p class="boxinside">
 					<input type="number" id="target_box">
-					<select class="dropdwns">
+					<select class="dropdwn units">
 						<option>Unit2</option>
 						<option id="u21">Izod</option>
 						<option id="u22">Charpy</option>
 					</select>
+					</p>
 					<br>
+					<p class="boxinside">
 					<input type="reset" value="Reset Fields">
-				</div>`;
+					</p>`;
 				
-	}
-	else {
-		document.getElementById('propunits').innerHTML = "";
 	}
 }
 function formula_dist(num) {
