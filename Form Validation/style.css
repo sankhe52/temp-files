@@ -2,21 +2,22 @@
 body{background-color: #68b831;
 	margin: 0; }
 h1{color: white;
+	font-size: 3.5em;
 	font-family: montserrat;
 	text-align: center;
 	background-color: #131c21;
 	padding: 20px;
-	margin: 0 0 20px 0;
+	margin: 0 0 50px 0;
 	font-weight: 100;}
 table{background-color: #F2F2F2;
-		width: 60%;
+		width: 85%;
 		border-radius: 10px;
 		box-shadow: 20px 20px 25px rgb(0, 0, 0, 0.16);}
-.field{font-size: 2em;
+.field{font-size: 2.5em;
 	border: 0px solid red;
 	font-family: monda;
 	width: 90%;
-	padding: 10px;
+	padding: 20px;
 	border-radius:5px;
 	box-shadow: 15px 12px 10px rgb(0, 0, 0, 0.10);}
 .enter{border:0px solid blue;
