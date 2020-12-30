@@ -3,23 +3,25 @@
 <head>
 	<title>Form Project</title>
 </head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 	<h1>Form Validation Project</h1>
-	<table id="tid" cellpadding="20px" align="center">
+	<h2>Fill in the details</h2>
+	<form id="form">	
+	<table id="tid" align="center">
 		<tr>
-			<td class="enter"><input type="text" name="fname" id="first_name" class="field" placeholder="First Name"></input></td>
+			<td class="enter"><input type="text" name="fname" id="first_name" class="field" placeholder="First Name"></td>
 		</tr>
 		<tr>
-			<td class="enter"><input type="text" name="lname" id="last_name" class="field" placeholder="Last Name"></input></td>
+			<td class="enter"><input type="text" name="lname" id="last_name" class="field" placeholder="Last Name"></td>
 		</tr>
 		<tr>
 			<td class="enter"><select name="num_code" id="number_code" class="field">
-				<option>+91</option>
+				<option selected>+91</option>
 				<option>+1</option>
 				<option>+45</option>
-				<input type="number" name="monum" id="mobile_number" class="field" placeholder="Mobile No."></input>
+				<input type="number" name="monum" id="mobile_number" class="field" placeholder="Mobile No.">
 			</td>
 		</tr>
 		<tr>
@@ -27,17 +29,21 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="enter"><input type="email" name="ename" id="email_id" class="field" placeholder="Email"></input></td>
+			<td class="enter"><input type="email" name="ename" id="email_id" class="field" placeholder="Email"></td>
 		</tr>
 		<tr>
-			<td class="enter"><input type="password" name="pname" id="password_field" class="field" placeholder="Password"></input></td>
+			<td class="enter"><input type="password" name="pname" id="password_field" class="field" placeholder="Password"></td>
 		</tr>
 		<tr>
-			<td class="enter"><input type="password" name="cpname" id="cpassword_name" class="field" placeholder="Confirm Password"></input></td>
+			<td class="enter"><input type="password" id="cpname" class="field" placeholder="Confirm Password"></td>
 		</tr>
-		<tr style="text-align: center;"><td><button type="button" class="click_buttons" id="signin_btn">Register</button></td></tr>
+		<tr>
+			<td id="error-text" class="enter"></td>
+		</tr>
+		<tr>
+			<td  id="btn"><input type="submit" class="click_buttons" id="signin_btn" value="Register"></td>
+		</tr>
 	</table>
-
-
+<script src="script.js"></script>
 </body>
 </html>
