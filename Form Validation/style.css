@@ -3,14 +3,14 @@ body{background-color: rgb(131 37 64);
 	background-repeat: no-repeat;
 	margin: 0;}
 h1{color: white;
-	font-family: montserrat;
+	font-family: 'Poppins', sans-serif;
 	text-align: center;
 	background-color: #0257d2;
 	padding: 20px;
 	margin: 0 0 25px 0;
 	font-weight: 100;}
 h2{color: white;
-	font-family: montserrat;
+	font-family: 'Poppins', sans-serif;
 	text-align: center;
 	margin: 0 0 25px 0;
 	font-weight: bolder;}
@@ -23,7 +23,7 @@ table{background-color: #F2F2F2;
 .enter{padding: 5px;}
 .field{font-size: 1em;
 	border: 1px solid white;
-	font-family: monda;
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
 	padding: 10px;
 	border-radius:5px;
@@ -41,7 +41,7 @@ table{background-color: #F2F2F2;
 #number_code{width: 25%;
 			margin-right: 5%;}
 .click_buttons{font-size: 1em;
-				font-family: montserrat;
+				font-family: 'Roboto', sans-serif;
 				color: #131c21;
 				font-weight: bold;
 				border: 3px solid #0a2642;
