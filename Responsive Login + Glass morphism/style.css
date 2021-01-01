@@ -40,6 +40,7 @@ h1{background-color: #0A1B25;
 .element{margin-bottom: 20px;}
 .contents a{text-align: right;
 		float: right;
+		font-size:0.5em;
 		margin-top: 5px;
 		color: white;
 		transition: 0.25s;}
