@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<head>
+<style>
+body{
+  width:480px;
+  height:800px;
+}
+.keypad {
+  background-color: rgb(77, 77, 77);
+    border: 2px solid rgb(64, 64, 64);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    margin: 15px 20px;
+    cursor: pointer;
+    width:80px;
+    height:80px;
+}
+.keypad1{border-radius: 50%;}
+
+.floating-box_input{
+  background-color: rgb(77, 77, 77);
+  display: inline-block;
+  width: 60px;
+  height: 90px;
+  border: 6px solid rgb(64, 64, 64);
+  margin: 10px 20px;
+  font-size: 96px;
+  line-height: 90px;
+}
+</style>
+</head>
+<body>
+
+  <div style="text-align:center;">
+    <div class="floating-box_input" id="1">&nbsp;</div>
+    <div class="floating-box_input" id="2">&nbsp;</div>
+    <div class="floating-box_input" id="3">&nbsp;</div>
+    <div class="floating-box_input" id="4">&nbsp;</div>
+
+    <button class="keypad keypad1" onclick="inputDigit('1')">1</button>
+    <button class="keypad keypad1" onclick="inputDigit('2')">2</button>
+    <button class="keypad keypad1" onclick="inputDigit('3')">3</button>
+    <button class="keypad keypad1" onclick="inputDigit('4')">4</button>
+    <button class="keypad keypad1" onclick="inputDigit('5')">5</button>
+    <button class="keypad keypad1" onclick="inputDigit('6')">6</button>
+    <button class="keypad keypad1" onclick="inputDigit('7')">7</button>
+    <button class="keypad keypad1" onclick="inputDigit('8')">8</button>
+    <button class="keypad keypad1" onclick="inputDigit('9')">9</button>
+    <button class="keypad keypad1" onclick="inputDigit('0')" style="margin-left:144px;">0</button>
+    <button class="keypad keypad1" onclick="deleteNum()">
+    <i class="material-icons" style="font-size:40px; color:white;">backspace</i>
+  </button>
+  </div>
+  <script>
+    function inputDigit(numIn) {
+      var curr = 1;
+
+      while (document.getElementById(curr).innerHTML != "&nbsp;") {
+        curr++;
+        if (curr == 12) {
+          break;
+        }
+      }
+      if (curr == 12) {
+        return;
+      } else {
+        document.getElementById(curr).innerHTML = numIn;
+      }
+    }
+
+    function deleteNum() {
+      var i;
+      for (i = 4; i >= 1; i--) {
+        if (document.getElementById(i).innerHTML == "") {
+          continue;
+        } else {
+          document.getElementById(i).innerHTML = "";
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
