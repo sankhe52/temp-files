@@ -1,0 +1,109 @@
+*{box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	border:0;
+	font-family: Segoe UI;
+	transition: 0.25s;
+	outline: 0;}
+body{background-color: orange;}
+h1{text-align: center;
+	padding: 20px;
+	color: white;
+	font-weight: 100;
+	background: linear-gradient(rgb(0, 45, 12), green);}
+.container{margin: 20px 20px;
+			border-radius: 10px;
+			overflow: hidden;
+			border: 0px solid black;
+			box-shadow: 20px 15px 15px rgb(0, 0, 0, 0.23)}
+.screen{padding: 1px 10px;
+	background: #c7ecee;
+	color: black;
+	height: 140px;
+	border-radius: 10px 10px 0 0; 
+	text-align: right;
+	border: 10px solid #434343;}
+#inputs{font-size: 1.3em;
+		margin: 5px 0 30px 0;}
+#outputs{font-size: 2em;
+		font-weight: 1000;}
+.secondary{display: flex;
+		flex-direction: column;}
+.action{float: left;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 1.01em;
+		background: ivory;
+		width: 25%;
+		height: 40px;}
+.action:hover{background: #434343;
+			color: white;}
+.action:active{background: black;
+			font-size: 0.5em;}
+.numbers{display: flex;
+		flex-direction: column;}
+.num{float: left;
+	background: #434343;
+	cursor: pointer;
+	width: 25%;
+	color: white;
+	font-weight: 500;
+	font-size: 1.5em;
+	height: 80px;
+	border: 0.1px solid #636363;}
+.num:hover{background: #909090;}
+.num:active{background: black;
+			font-size: 0.5em;
+			border: 1px solid #636363;}
+.for-primary{position: relative;
+			display: flex;
+			flex-direction: column;}
+.operator{height: 80px;
+		float: left;
+		width: 25%;
+		cursor: pointer;
+		flex:1;
+		font-weight: 500;
+		font-size: 1.5em;
+		color: white;
+		background: #636363;
+		}
+.operator:hover{background: green;}
+.operator:active{background: black;
+				font-size: 0.5em;}
+#clear{background: red;
+		position: absolute;
+		top: 0;
+		right: 0;}
+#clear:hover{background: rgb(200, 0, 0);}
+.divison{position: absolute;
+		top: 80px;
+		right: 0;}
+.multiply{position: absolute;
+		top: 160px;
+		right: 0;}
+.minus{position: absolute;
+		top: 240px;
+		right: 0;}
+.plus{position: absolute;
+		top: 320px;
+		right: 0;}
+
+
+
+@media (min-width:1500px) {
+ 	.container{margin: 120px 600px;}
+}
+@media (min-width: 1200px) and (max-width: 1501px) {
+	.container{margin: 70px 450px;}
+}
+
+@media (min-width: 992px) and (max-width: 1201px) {
+	.container{margin: 70px 400px;}
+}
+@media (min-width: 767px) and (max-width: 993px) {
+	.container{margin: 70px 300px;}
+}
+@media (max-width: 465px) {
+	.container{margin: 20px 20px;}
+}
