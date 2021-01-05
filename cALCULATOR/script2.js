@@ -30,7 +30,7 @@ for (let i = 0; i<operator.length; i++) {
 		const lastChar = inputs.innerHTML.charAt(inputs.innerHTML.length - 1);
 		if (inputs.innerHTML != '') {	
 			if (lastChar != '*' && lastChar != '+' && lastChar != '/' && 
-				lastChar != '-' && lastChar != '%' && lastChar != '(' && lastChar != ')') {
+				lastChar != '-' && lastChar != '%') {
 				if (flag == 0) {
 					inputs.innerHTML += this.id;
 				}
